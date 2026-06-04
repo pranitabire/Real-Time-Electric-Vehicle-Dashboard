@@ -1,9 +1,11 @@
 # Real-Time-Electric-Vehicle-Dashboard
 Developed a real-time Electric Vehicle monitoring dashboard using STM32 Blue Pill, PICSimLab, and Python. ADAS (Advanced Driver Assistance System) features include collision and blind-spot detection. The system monitors speed, battery SOC, range, and motor temperature, providing live UART-based visualization, alerts, and drive mode control
 
+
 # 🚗 EV ADAS Dashboard System
 
 Real-time Electric Vehicle (EV) Monitoring and Advanced Driver Assistance System (ADAS) using STM32F103C8T6 Blue Pill, PICSimLab, HC-SR04 Ultrasonic Sensors, and a Python Dashboard. The system provides live EV telemetry, collision detection, blind-spot monitoring, parking assist, fault management, and UART-based dashboard visualization.
+
 
 ## ✨ Features
 
@@ -22,6 +24,7 @@ Real-time Electric Vehicle (EV) Monitoring and Advanced Driver Assistance System
 - Parking assist mode
 - Multi-level alarm system
 
+
 ### Safety & Fault Management
 - Motor over-temperature protection
 - Low SOC protection
@@ -30,6 +33,7 @@ Real-time Electric Vehicle (EV) Monitoring and Advanced Driver Assistance System
 - Safe-state transition
 - PWM motor shutdown during faults
 
+
 ### Dashboard
 - Live UART telemetry streaming
 - Speedometer gauge
@@ -37,7 +41,6 @@ Real-time Electric Vehicle (EV) Monitoring and Advanced Driver Assistance System
 - ADAS bird-eye visualization
 - Blind-spot indicators
 - Warning and fault alerts
-
 
 
 ## 🛠 Hardware Used
@@ -98,6 +101,7 @@ HC-SR04 Sensors → STM32 Blue Pill → ADAS & EV Control Logic → UART → Pyt
 - Motor Temperature (°C)
 - Drive Mode
 - Uptime
+  
 
 ### ADAS Metrics
 - Front Distance
@@ -106,7 +110,6 @@ HC-SR04 Sensors → STM32 Blue Pill → ADAS & EV Control Logic → UART → Pyt
 - Collision Level
 - Blind Spot Status
 - TTC (Time-To-Collision)
-
 
 
 ## 📡 UART Communication
@@ -119,8 +122,6 @@ HC-SR04 Sensors → STM32 Blue Pill → ADAS & EV Control Logic → UART → Pyt
 - Status/ACK Packet (0x04)
 
 
-
-
 ## 📈 Performance
 
 - Control Loop < 5 ms
@@ -128,31 +129,6 @@ HC-SR04 Sensors → STM32 Blue Pill → ADAS & EV Control Logic → UART → Pyt
 - Dashboard Refresh = 10 Hz
 - UART Latency < 10 ms
 - Fault Response ≤ 10 ms
-
-
-
-## 📂 Project Structure
-
-
-EV_ADAS_Dashboard/
-│
-├── Core/
-│   ├── ev_control.c
-│   ├── adas.c
-│   ├── ultrasonic.c
-│   ├── fault.c
-│   ├── uart_shell.c
-│   └── buzzer.c
-│
-├── Dashboard/
-│   ├── dashboard.py
-│   └── telemetry_parser.py
-│
-├── Docs/
-│   └── Requirements_Design_Document.pdf
-│
-└── README.md
-
 
 
 ## 🎯 Applications
